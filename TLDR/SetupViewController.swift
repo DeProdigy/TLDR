@@ -20,18 +20,22 @@ class SetupViewController: UIViewController {
     @IBAction func informationSubmitted(_ sender: UIButton) {
         let age = ageStepper.value
         let gender = genderSelector.titleForSegment(at: genderSelector.selectedSegmentIndex)!
+        let today = Date()
         
-        print(age, gender)
+        UserDefaults.standard.set(age, forKey: "age")
+        UserDefaults.standard.set(gender, forKey: "gender")
+        UserDefaults.standard.set(today, forKey: "date")
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+//        print(UserDefaults.standard.value(forKey: "age")!)
+//        print(UserDefaults.standard.value(forKey: "gender")!)
+//        print(UserDefaults.standard.value(forKey: "date")!)
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
 }
 
