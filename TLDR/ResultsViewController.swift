@@ -10,28 +10,36 @@ import UIKit
 
 class ResultsViewController: UIViewController {
     
+    @IBOutlet weak var resultsLabel: UILabel!
     
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        let age = UserDefaults.standard.value(forKey: "age")
+        let gender = UserDefaults.standard.value(forKey: "gender")
+        let setUpDate = UserDefaults.standard.value(forKey: "date")
+        
+        resultsLabel.text = numberOfDays(age: age as! Int, gender: gender as! String, setUpDate: setUpDate as! Date)
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    func numberOfDays(age: Int, gender: String, setUpDate: Date) -> String {
+        let timeSinceSetup = setUpDate.timeIntervalSinceNow
+        let minutesSinceSetup = abs(timeSinceSetup)
+        let hoursSinceSetup = minutesSinceSetup / 60
+        let daysSinceSetup = hoursSinceSetup / 60
+        
+        let yearsLeft = 76 - age
+        let daysLeft = (yearsLeft * 365) - Int(daysSinceSetup)
+        
+        let numberFormatter = NumberFormatter()
+        numberFormatter.numberStyle = NumberFormatter.Style.decimal
+        let formattedNumber = numberFormatter.string(from: NSNumber(value: daysLeft))
+        
+        return formattedNumber!
     }
-    */
-
 }
