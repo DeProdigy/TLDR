@@ -29,9 +29,9 @@ class ResultsViewController: UIViewController {
     
     func numberOfDays(age: Int, gender: String, setUpDate: Date) -> String {
         let timeSinceSetup = setUpDate.timeIntervalSinceNow
-        let minutesSinceSetup = abs(timeSinceSetup)
+        let minutesSinceSetup = abs(timeSinceSetup) / 60
         let hoursSinceSetup = minutesSinceSetup / 60
-        let daysSinceSetup = hoursSinceSetup / 60
+        let daysSinceSetup = hoursSinceSetup / 24
         
         let yearsLeft = 76 - age
         let daysLeft = (yearsLeft * 365) - Int(daysSinceSetup)
