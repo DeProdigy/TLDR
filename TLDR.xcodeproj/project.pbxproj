@@ -16,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BB0DF1761EE331B700E164D0 /* TLDR.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TLDR.entitlements; sourceTree = "<group>"; };
 		BB5C54C41EDBA698004C0C01 /* TLDR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TLDR.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB5C54C71EDBA698004C0C01 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BB5C54C91EDBA698004C0C01 /* SetupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetupViewController.swift; sourceTree = "<group>"; };
@@ -56,6 +57,7 @@
 		BB5C54C61EDBA698004C0C01 /* TLDR */ = {
 			isa = PBXGroup;
 			children = (
+				BB0DF1761EE331B700E164D0 /* TLDR.entitlements */,
 				BB5C54C71EDBA698004C0C01 /* AppDelegate.swift */,
 				BB5C54C91EDBA698004C0C01 /* SetupViewController.swift */,
 				BB5C54D91EDBABED004C0C01 /* ResultsViewController.swift */,
@@ -101,6 +103,11 @@
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = LFM955AHXH;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -265,6 +272,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = TLDR/TLDR.entitlements;
 				DEVELOPMENT_TEAM = LFM955AHXH;
 				INFOPLIST_FILE = TLDR/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -278,6 +286,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = TLDR/TLDR.entitlements;
 				DEVELOPMENT_TEAM = LFM955AHXH;
 				INFOPLIST_FILE = TLDR/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
