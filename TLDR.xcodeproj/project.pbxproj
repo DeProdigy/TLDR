@@ -306,6 +306,7 @@
 				BB5C54D81EDBA699004C0C01 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
