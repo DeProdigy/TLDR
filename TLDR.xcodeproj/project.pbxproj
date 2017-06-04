@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BB0DF1781EE3709400E164D0 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0DF1771EE3709400E164D0 /* Helpers.swift */; };
 		BB5C54C81EDBA698004C0C01 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5C54C71EDBA698004C0C01 /* AppDelegate.swift */; };
 		BB5C54CA1EDBA698004C0C01 /* SetupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5C54C91EDBA698004C0C01 /* SetupViewController.swift */; };
 		BB5C54CD1EDBA699004C0C01 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB5C54CB1EDBA698004C0C01 /* Main.storyboard */; };
@@ -17,6 +18,7 @@
 
 /* Begin PBXFileReference section */
 		BB0DF1761EE331B700E164D0 /* TLDR.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TLDR.entitlements; sourceTree = "<group>"; };
+		BB0DF1771EE3709400E164D0 /* Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
 		BB5C54C41EDBA698004C0C01 /* TLDR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TLDR.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB5C54C71EDBA698004C0C01 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BB5C54C91EDBA698004C0C01 /* SetupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetupViewController.swift; sourceTree = "<group>"; };
@@ -61,6 +63,7 @@
 				BB5C54C71EDBA698004C0C01 /* AppDelegate.swift */,
 				BB5C54C91EDBA698004C0C01 /* SetupViewController.swift */,
 				BB5C54D91EDBABED004C0C01 /* ResultsViewController.swift */,
+				BB0DF1771EE3709400E164D0 /* Helpers.swift */,
 				BB5C54CB1EDBA698004C0C01 /* Main.storyboard */,
 				BB5C54CE1EDBA699004C0C01 /* Assets.xcassets */,
 				BB5C54D01EDBA699004C0C01 /* LaunchScreen.storyboard */,
@@ -150,6 +153,7 @@
 				BB5C54CA1EDBA698004C0C01 /* SetupViewController.swift in Sources */,
 				BB5C54C81EDBA698004C0C01 /* AppDelegate.swift in Sources */,
 				BB5C54DA1EDBABED004C0C01 /* ResultsViewController.swift in Sources */,
+				BB0DF1781EE3709400E164D0 /* Helpers.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
