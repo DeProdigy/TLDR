@@ -18,14 +18,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
         // Prompt for notification permission
-//        let notificationOptions: UNAuthorizationOptions = [.alert, .sound, .badge]
-//        
-//        UNUserNotificationCenter.current().requestAuthorization(options: notificationOptions) {
-//            (granted, error) in
-//            if !granted {
-//                print("Notifications not granted")
-//            }
-//        }
+        let notificationOptions: UNAuthorizationOptions = [.alert, .sound]
+        
+        UNUserNotificationCenter.current().requestAuthorization(options: notificationOptions) {
+            (granted, error) in
+            if !granted {
+                print("Notifications not granted")
+            }
+        }
         
         return true
     }
